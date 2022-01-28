@@ -1,0 +1,42 @@
+div.search-container {
+  & > .form-field {
+    display: flex;
+    align-items: center;
+    & > input, & > button {
+      all: unset;
+      height: 3rem;
+      border-radius: 3px;
+      box-sizing: border-box;
+      transition: all 150ms ease-out;
+    }
+    & > input {
+      flex: 1;
+      background: #fdfdfd;
+      box-shadow: inset 0 0 1.5rem rgba(black, 0.05);
+      padding: 0 1rem;
+      border: thin solid rgba(black, 0.06);
+      &:focus {
+        box-shadow: inset 0 0 1.5rem rgba(black, 0.03);
+      }
+    }
+    & > button {
+      margin-left: 10px;
+      width: 10rem;
+      background: linear-gradient(to bottom, #fdd942 50%,#e9c734 100%);
+      border: 3px solid #e9c734;
+      text-align: center;
+      font-weight: 700;
+      cursor: pointer;
+      &:hover {
+        $percentage: 5%;
+        background: linear-gradient(to bottom, lighten(#fdd942, $percentage) 50%,lighten(#e9c734, $percentage) 100%);
+        border-color: lighten(#e9c734, $percentage);
+      }
+      &:active {
+        $percentage: 1%;
+        background: linear-gradient(to bottom, darken(#fdd942, $percentage) 50%,darken(#e9c734, $percentage) 100%);
+        border-color: darken(#e9c734, $percentage);
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+div.side-bar {
+  & > div {
+    background: #f2f3f7;
+    & > ul {
+      list-style: none;
+      padding: 0.5rem;
+      @media (max-width: 900px) {
+        display: flex;
+      }
+      & > li {
+        padding: 0.5rem;
+        cursor: pointer;
+        &:hover {
+          font-weight: 700;
+        }
+        &.selected {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

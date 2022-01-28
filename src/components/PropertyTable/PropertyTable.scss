@@ -1,0 +1,30 @@
+table.properties-table {
+  width: 100%;
+  border-collapse: collapse;
+  & > thead {
+    & > tr {
+      & > th {
+        border-bottom: 2px solid #c8c8cd;
+        border-right: 2px solid white;
+        background: #e4e4e4;
+        height: 3rem;
+        &:last-of-type {
+          border-right: none;
+        }
+      }
+    }
+  }
+  & > tbody {
+    background: #f4f5f9;
+    & > tr {
+      border-bottom: thin solid black;
+      & > td {
+        height: 3rem;
+        text-align: center;
+      }
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+}
