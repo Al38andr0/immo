@@ -45,7 +45,7 @@ JavaScript or TypeScript as you prefer. Just be sure to include a README file
 telling us how to run it!
 
 ### IMPLENTATION
-I used React for this project. The command to run it is: npm start from the terminal.
+I used React for this project. The command to run it is: **npm start** from the terminal.
 
 
 ## Markup and styling
@@ -74,3 +74,7 @@ Based on that, I implemented this solution (and it took me quite a bit of time):
 Once created, I realized that it was creating several issues for the navigation journey (I'm not going to explain it now).
 Only at this point, did I see that the properties' data was different from the one served by the API, and then (another assumption) I thought that also the data from the property types could have been different from the one coming from the API.
 In the end, I reverted the original solution I built and now my implementation always shows all the types in the filter.
+
+In the ErrorMessage folder I also created a simple component test. Just to give you a little taste of how I organize my file structure and my tests. The command to run the tests is: **npm test* from the terminal.
+
+Also, in the same folder, you can see that I'm using **prop-types** in the JS file, as before, to give you an idea of the functionalities for a real project.
